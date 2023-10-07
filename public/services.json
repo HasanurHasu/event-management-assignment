@@ -1,45 +1,44 @@
 [
-    {
-      "id": 1,
-      "name": "Executive Summit 2023",
-      "image": "executive-summit.jpg",
-      "price": 199.99,
-      "long_description": "Join us for the Executive Summit 2023, a premier corporate event bringing together industry leaders and visionaries. Immerse yourself in a day of strategic discussions, insightful keynotes, and exclusive networking opportunities. This summit is your gateway to cutting-edge business strategies and unparalleled professional connections. Elevate your leadership journey with Executive Summit 2023."
-    },
-    {
-      "id": 2,
-      "name": "Innovation Forum",
-      "image": "innovation-forum.jpg",
-      "price": 149.99,
-      "long_description": "Embark on a transformative experience at the Innovation Forum. Explore the latest technological advancements, disruptive innovations, and collaborative opportunities. Engage with thought leaders and pioneers shaping the future of business. Don't miss your chance to be part of this dynamic event where innovation meets strategy, only at the Innovation Forum."
-    },
-    {
-      "id": 3,
-      "name": "Leadership Retreat",
-      "image": "leadership-retreat.jpg",
-      "price": 299.99,
-      "long_description": "Escape to the scenic Leadership Retreat, a unique corporate getaway designed for intensive leadership development. Engage in team-building activities, gain insights from renowned leadership coaches, and recharge your strategic thinking. Immerse yourself in nature while honing your leadership skills. Elevate your leadership potential at the Leadership Retreat."
-    },
-    {
-      "id": 4,
-      "name": "Global Business Symposium",
-      "image": "business-symposium.jpg",
-      "price": 249.99,
-      "long_description": "Step into the future of global business at the Global Business Symposium. Connect with international leaders, explore cross-cultural collaborations, and gain a deep understanding of global market trends. This symposium is your passport to global success. Join us for a day of cross-border insights and networking at the Global Business Symposium."
-    },
-    {
-      "id": 5,
-      "name": "Strategic Leadership Forum",
-      "image": "strategic-leadership-forum.jpg",
-      "price": 179.99,
-      "long_description": "Participate in the Strategic Leadership Forum, an exclusive gathering of top executives and strategic thinkers. Dive into discussions on industry trends, leadership challenges, and innovative solutions. This forum is your platform for strategic dialogue and executive networking. Secure your seat at the Strategic Leadership Forum."
-    },
-    {
-      "id": 6,
-      "name": "Corporate Wellness Summit",
-      "image": "corporate-wellness-summit.jpg",
-      "price": 199.99,
-      "long_description": "Prioritize the well-being of your team at the Corporate Wellness Summit. Explore holistic approaches to corporate wellness, discover workplace well-being strategies, and engage with experts in the field. Nurture a healthy and productive work environment. Invest in the health and happiness of your team with the Corporate Wellness Summit."
-    }
-  ]
-  
+  {
+    "id": 1,
+    "name": "Executive Summit 2023",
+    "image": "https://www.sait.ca/assets/images/sait/programs/pr-htm-event-management-600x400.jpg",
+    "price": 199.99,
+    "long_description": "Join us for the Executive Summit 2023, a premier corporate event bringing together industry leaders and visionaries. Immerse yourself in a day of strategic discussions, insightful keynotes, and exclusive networking opportunities. This summit is your gateway to cutting-edge business strategies and unparalleled professional connections. Elevate your leadership journey with Executive Summit 2023."
+  },
+  {
+    "id": 2,
+    "name": "Innovation Forum",
+    "image": "https://www.sait.ca/assets/images/sait/programs/pr-htm-event-management-600x400.jpg",
+    "price": 149.99,
+    "long_description": "Embark on a transformative experience at the Innovation Forum. Explore the latest technological advancements, disruptive innovations, and collaborative opportunities. Engage with thought leaders and pioneers shaping the future of business. Don't miss your chance to be part of this dynamic event where innovation meets strategy, only at the Innovation Forum."
+  },
+  {
+    "id": 3,
+    "name": "Leadership Retreat",
+    "image": "https://www.sait.ca/assets/images/sait/programs/pr-htm-event-management-600x400.jpg",
+    "price": 299.99,
+    "long_description": "Escape to the scenic Leadership Retreat, a unique corporate getaway designed for intensive leadership development. Engage in team-building activities, gain insights from renowned leadership coaches, and recharge your strategic thinking. Immerse yourself in nature while honing your leadership skills. Elevate your leadership potential at the Leadership Retreat."
+  },
+  {
+    "id": 4,
+    "name": "Global Business Symposium",
+    "image": "https://www.sait.ca/assets/images/sait/programs/pr-htm-event-management-600x400.jpg",
+    "price": 249.99,
+    "long_description": "Step into the future of global business at the Global Business Symposium. Connect with international leaders, explore cross-cultural collaborations, and gain a deep understanding of global market trends. This symposium is your passport to global success. Join us for a day of cross-border insights and networking at the Global Business Symposium."
+  },
+  {
+    "id": 5,
+    "name": "Strategic Leadership Forum",
+    "image": "https://www.sait.ca/assets/images/sait/programs/pr-htm-event-management-600x400.jpg",
+    "price": 179.99,
+    "long_description": "Participate in the Strategic Leadership Forum, an exclusive gathering of top executives and strategic thinkers. Dive into discussions on industry trends, leadership challenges, and innovative solutions. This forum is your platform for strategic dialogue and executive networking. Secure your seat at the Strategic Leadership Forum."
+  },
+  {
+    "id": 6,
+    "name": "Corporate Wellness Summit",
+    "image": "https://www.sait.ca/assets/images/sait/programs/pr-htm-event-management-600x400.jpg",
+    "price": 199.99,
+    "long_description": "Prioritize the well-being of your team at the Corporate Wellness Summit. Explore holistic approaches to corporate wellness, discover workplace well-being strategies, and engage with experts in the field. Nurture a healthy and productive work environment. Invest in the health and happiness of your team with the Corporate Wellness Summit."
+  }
+]
