@@ -1,15 +1,11 @@
-import { useEffect } from "react";
-import { useState } from "react";
+
+import { useContext } from "react";
 import ServicesCard from "../ServicesCard/ServicesCard";
+import { AuthContext } from "../../Providers/Providers";
 
 const Services = () => {
-    const [events, setEvents] = useState([]);
-
-    useEffect(() => {
-        fetch('services.json')
-            .then(res => res.json())
-            .then(data => setEvents(data))
-    }, [])
+    
+    const {events} = useContext(AuthContext)
 
     return (
         <div>
