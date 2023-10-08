@@ -1,12 +1,12 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import './Navbar.css'
 
 
 const Navbar = () => {
     const navLinks = <>
-    <NavLink className="py-2 px-5" to='/'>Home</NavLink>
-    <NavLink className="py-2 px-5" to='/services'>Services</NavLink>
-    <NavLink className="py-2 px-5" to='/about'>About Us</NavLink>
+        <NavLink className="py-2 px-5" to='/'>Home</NavLink>
+        <NavLink className="py-2 px-5" to='/services'>Services</NavLink>
+        <NavLink className="py-2 px-5" to='/about'>About Us</NavLink>
     </>
     return (
         <div className="navbar bg-base-100">
@@ -19,7 +19,7 @@ const Navbar = () => {
                         {navLinks}
                     </ul>
                 </div>
-                <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+                <Link className="btn btn-ghost normal-case text-3xl"><span className="text-[#D72050]">Event</span> Management</Link>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1 text-base font-medium">
@@ -27,7 +27,7 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn">Button</a>
+                <button className="bg-[#D72050] px-5 py-2 rounded-md text-white ">Login</button>
             </div>
         </div>
     );
