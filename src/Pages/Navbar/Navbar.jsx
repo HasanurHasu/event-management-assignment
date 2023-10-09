@@ -1,10 +1,16 @@
 import { Link, NavLink } from "react-router-dom";
 import './Navbar.css'
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { AuthContext } from "../../Providers/Providers";
+import 'aos/dist/aos.css'
+import Aos from "aos";
 
 
 const Navbar = () => {
+    useEffect(() => {
+        Aos.init({duration: '500', delay: '200'})
+    }, [])
+
     const navLinks = <>
         <NavLink className="py-2 px-5" to='/'>Home</NavLink>
         <NavLink className="py-2 px-5" to='/services'>Services</NavLink>
@@ -13,7 +19,7 @@ const Navbar = () => {
 
     const { user, logOut } = useContext(AuthContext)
     return (
-        <div className="navbar max-w-6xl mx-auto">
+        <div data-aos="fade-down" className="navbar max-w-6xl mx-auto">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">

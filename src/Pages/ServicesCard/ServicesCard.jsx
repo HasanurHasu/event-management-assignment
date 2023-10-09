@@ -1,12 +1,20 @@
 
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
+import 'aos/dist/aos.css'
+import Aos from "aos";
+import { useEffect } from 'react';
+
 
 const ServicesCard = ({ event }) => {
+    
     const {id, name, image, price, description } = event;
+    useEffect(() => {
+        Aos.init({duration: '1000', delay: '500'})
+    }, [])
     return (
         <div>
-            <div className="border px-4 py-4 rounded-md">
+            <div data-aos="flip-right" className="border px-4 py-4 rounded-md">
                 <figure className="">
                     <img src={image} alt="Shoes" className="rounded-md" />
                 </figure>
