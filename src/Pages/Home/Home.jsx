@@ -8,9 +8,11 @@ const Home = () => {
     return (
         <div>
             <Banner></Banner>
-            <Services></Services>
-            <Subscribe></Subscribe>
+            <div className="bg-[#FFF8F5]">
+                <Services></Services>
+            </div>
             <TeamMember></TeamMember>
+            <Subscribe></Subscribe>
             <Footer></Footer>
         </div>
     );

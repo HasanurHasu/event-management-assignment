@@ -1,7 +1,7 @@
 
 const Subscribe = () => {
     return (
-        <div className="my-10 flex flex-col items-center gap-4 py-20 bg-[#FFF8F5]">
+        <div className="my-10 flex flex-col items-center gap-4 py-28 bg-[#FFF8F5]">
             <h1 className="text-3xl font-bold text-black">Subscribe</h1>
             <hr className="border-t-2 border-black bg-black w-1/6" />
             <p className="text-black">Subscribe our newsletter to stay updated every moment</p>
