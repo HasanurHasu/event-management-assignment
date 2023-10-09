@@ -5,14 +5,14 @@ import { AuthContext } from "../../Providers/Providers";
 
 const Login = () => {
 
-    const { singInUser } = useContext(AuthContext);
+    const { singIn } = useContext(AuthContext);
 
     const handleLogin = e => {
         e.preventDefault();
         const email = e.target.email.value;
         const password = e.target.password.value;
         console.log(email, password);
-        singInUser(email, password)
+        singIn(email, password)
             .then(result => {
                 console.log(result.user);
             })

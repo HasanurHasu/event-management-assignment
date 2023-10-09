@@ -1,5 +1,7 @@
 import { Link, NavLink } from "react-router-dom";
 import './Navbar.css'
+import { useContext } from "react";
+import { AuthContext } from "../../Providers/Providers";
 
 
 const Navbar = () => {
@@ -8,6 +10,8 @@ const Navbar = () => {
         <NavLink className="py-2 px-5" to='/services'>Services</NavLink>
         <NavLink className="py-2 px-5" to='/about'>About Us</NavLink>
     </>
+
+    const { user, logOut } = useContext(AuthContext)
     return (
         <div className="navbar max-w-6xl mx-auto">
             <div className="navbar-start">
@@ -27,7 +31,20 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <Link to='/login'><button className="bg-[#D72050] px-5 py-2 rounded-md text-white ">Login</button></Link>
+                {
+                    user ?
+                        <div className="flex items-center gap-1">
+                            <div className="avatar">
+                                <div className="w-12 rounded-full ring-offset-base-100 ring-offset-2">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/6596/6596121.png" />
+                                </div>
+                            </div>
+                            <button onClick={logOut} className="bg-[#D72050] px-5 py-2 rounded-md text-white ">Sign Out</button>
+                        </div>
+                        :
+                        <Link to='/login'><button className="bg-[#D72050] px-5 py-2 rounded-md text-white ">Login</button></Link>
+
+                }
             </div>
         </div>
     );
