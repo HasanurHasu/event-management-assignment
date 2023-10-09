@@ -11,6 +11,12 @@ const Providers = ({ children }) => {
     const [events, setEvents] = useState([]);
     const [loading, setLoading] = useState(true);
 
+    useEffect(() => {
+        fetch('/services.json')
+            .then(res => res.json())
+            .then(data => setEvents(data))
+    }, [])
+
     const createUser = (email, password) => {
         setLoading(true);
         return createUserWithEmailAndPassword(auth, email, password);
@@ -28,7 +34,6 @@ const Providers = ({ children }) => {
 
     useEffect(() => {
         const unSubscribe = onAuthStateChanged(auth, currentUser => {
-            console.log('user in the auth state changed', currentUser);
             setUser(currentUser);
             setLoading(false);
         });
@@ -37,11 +42,7 @@ const Providers = ({ children }) => {
         }
     }, [])
 
-    useEffect(() => {
-        fetch('services.json')
-            .then(res => res.json())
-            .then(data => setEvents(data))
-    }, [])
+
 
 
     const info = {

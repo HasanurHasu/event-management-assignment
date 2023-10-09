@@ -23,7 +23,7 @@ const ServicesCard = ({ event }) => {
                     <p>Price: ${price}</p>
                     <p>${description.slice(0, 70)}..</p>
                     <div className="card-actions">
-                        <Link to={`/services/${id}`}><button className="bg-[#D72050] px-5 py-2 rounded-md text-white ">See More</button></Link>
+                        <Link to={`/service/${id}`}><button className="bg-[#D72050] px-5 py-2 rounded-md text-white ">See More</button></Link>
                     </div>
                 </div>
             </div>

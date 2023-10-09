@@ -11,7 +11,7 @@ const Details = () => {
 
     const { name, image, description } = event;
     return (
-        <div className="space-y-4 mt-8">
+        <div className="space-y-4 mt-8 max-w-6xl mx-auto">
             <figure><img src={image} alt="" className="w-full" /></figure>
             <div className="space-y-4">
                 <h2 className="card-title">{name}</h2>
