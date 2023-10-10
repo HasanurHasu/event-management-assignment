@@ -8,18 +8,23 @@ import Aos from "aos";
 
 const Navbar = () => {
     useEffect(() => {
-        Aos.init({duration: '500', delay: '200'})
+        Aos.init({ duration: '500', delay: '200' })
     }, [])
-
+    const { user, logOut } = useContext(AuthContext)
     const navLinks = <>
+
         <NavLink className="py-2 px-5" to='/'>Home</NavLink>
         <NavLink className="py-2 px-5" to='/services'>Services</NavLink>
-        <NavLink className="py-2 px-5" to='/dashboard'>Dashboard</NavLink>
-        <NavLink className="py-2 px-5" to='/profile'>Profile</NavLink>
         <NavLink className="py-2 px-5" to='/about'>About Us</NavLink>
+        {
+            user && <>
+                <NavLink className="py-2 px-5" to='/dashboard'>Dashboard</NavLink>
+                <NavLink className="py-2 px-5" to='/profile'>Profile</NavLink>
+            </>
+        }
     </>
 
-    const { user, logOut } = useContext(AuthContext)
+
     return (
         <div data-aos="fade-down" className="navbar max-w-6xl mx-auto">
             <div className="navbar-start">

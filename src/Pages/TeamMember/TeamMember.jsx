@@ -15,7 +15,7 @@ const TeamMember = () => {
                 <h1 className="text-4xl font-extrabold text-center">Our Team Members</h1>
                 <p className="text-center w-2/3 mx-auto">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci accusantium, unde illo, quas dignissimos magnam saepe odio.</p>
             </div>
-            <div className="grid grid-cols-4 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:mx-5 mx-4">
                 {
                     teamMembers.map(member => <TeamMemberCard key={member.id} member={member}></TeamMemberCard>)
                 }

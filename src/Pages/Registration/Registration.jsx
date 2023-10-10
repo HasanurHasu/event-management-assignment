@@ -11,6 +11,15 @@ const Registration = () => {
         const name = e.target.name.value;
         const email = e.target.email.value;
         const password = e.target.password.value;
+
+        if(password.length < 6){
+            toast.error('Password length under 6')
+            return;
+        }
+        if(!/[!@#$%^&*(),.?":{}|<>]/.test(password)){
+            toast.error('must be capital letter and special  character')
+            return;
+        }
         createUser(email, password)
             .then(result => {
                 console.log(result.user);
@@ -72,7 +81,7 @@ const Registration = () => {
 
                         <div className="mx-auto -mt-4">
                             <button onClick={handleReg} className=" px-5  rounded-3xl  border-2 text-white ">
-                                <div className="flex items-center justify-around gap-12">
+                                <div className="flex items-center px-6">
                                     <img src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-512.png" className="w-12" />
                                     <h1 className="text-black text-lg font-semibold">Sing in With Google</h1>
                                 </div>

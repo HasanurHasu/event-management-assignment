@@ -16,7 +16,7 @@ const ServicesCard = ({ event }) => {
         <div>
             <div data-aos="flip-right" className="border px-4 py-4 rounded-md">
                 <figure className="">
-                    <img src={image} alt="Shoes" className="rounded-md" />
+                    <img src={image} alt="Shoes" className="rounded-md w-full lg:h-60 md:w-96 lg:w-96" />
                 </figure>
                 <div className="pt-4 space-y-2">
                     <h2 className="card-title">{name}</h2>

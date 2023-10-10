@@ -9,6 +9,7 @@ import Registration from "../Pages/Registration/Registration";
 import PrivateRoute from "./PrivateRoute";
 import About from "../Pages/About/About";
 import Profile from "../Pages/PrivatePage/Profile";
+import Dashboard from "../Pages/PrivatePage/Dashboard";
 
 const router = createBrowserRouter([
     {
@@ -26,7 +27,11 @@ const router = createBrowserRouter([
             },
             {
                 path: '/profile',
-                element: <Profile></Profile>
+                element: <PrivateRoute><Profile></Profile></PrivateRoute>
+            },
+            {
+                path: '/dashboard',
+                element: <PrivateRoute><Dashboard></Dashboard></PrivateRoute>
             },
             {
                 path: '/about',
