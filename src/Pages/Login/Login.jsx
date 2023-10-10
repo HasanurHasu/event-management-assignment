@@ -1,7 +1,8 @@
 import { useContext } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Providers/Providers";
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Login = () => {
 
@@ -14,15 +15,18 @@ const Login = () => {
         const email = e.target.email.value;
         const password = e.target.password.value;
         console.log(email, password);
+
         singIn(email, password)
             .then(result => {
                 console.log(result.user);
+                toast.success('User Login Successfully')
                 navigate(location?.state ? location.state : '/')
             })
             .catch(error => {
                 console.log(error.message);
-            })
+                toast.error('Login failed, Try again later')
 
+            })
     }
     return (
         <div className="bg-base-200">
@@ -54,6 +58,18 @@ const Login = () => {
                     </div>
                 </div>
             </div>
+            <ToastContainer
+                position="top-center"
+                autoClose={5000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+                theme="light"
+            />
         </div>
     );
 };
