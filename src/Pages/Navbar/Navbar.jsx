@@ -14,6 +14,8 @@ const Navbar = () => {
     const navLinks = <>
         <NavLink className="py-2 px-5" to='/'>Home</NavLink>
         <NavLink className="py-2 px-5" to='/services'>Services</NavLink>
+        <NavLink className="py-2 px-5" to='/dashboard'>Dashboard</NavLink>
+        <NavLink className="py-2 px-5" to='/profile'>Profile</NavLink>
         <NavLink className="py-2 px-5" to='/about'>About Us</NavLink>
     </>
 
@@ -29,7 +31,7 @@ const Navbar = () => {
                         {navLinks}
                     </ul>
                 </div>
-                <Link className="btn btn-ghost normal-case text-3xl"><span className="text-[#D72050]">Event</span> Management</Link>
+                <Link className="text-4xl font-extrabold"><span className="text-[#D72050]">Event</span></Link>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1 text-base font-medium">
